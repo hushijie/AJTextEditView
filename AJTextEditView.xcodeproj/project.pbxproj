@@ -15,6 +15,8 @@
 		9D3581991F09F5B900ADD886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3581971F09F5B900ADD886 /* LaunchScreen.storyboard */; };
 		9D3581A41F09F5B900ADD886 /* AJTextEditViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581A31F09F5B900ADD886 /* AJTextEditViewTests.m */; };
 		9D3581AF1F09F5B900ADD886 /* AJTextEditViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581AE1F09F5B900ADD886 /* AJTextEditViewUITests.m */; };
+		9D3581C01F09F61200ADD886 /* AJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581BF1F09F61200ADD886 /* AJTextField.m */; };
+		9D3581C31F0A339600ADD886 /* AJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581C21F0A339600ADD886 /* AJTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9D3581AA1F09F5B900ADD886 /* AJTextEditViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJTextEditViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3581AE1F09F5B900ADD886 /* AJTextEditViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJTextEditViewUITests.m; sourceTree = "<group>"; };
 		9D3581B01F09F5B900ADD886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3581BE1F09F61200ADD886 /* AJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTextField.h; sourceTree = "<group>"; };
+		9D3581BF1F09F61200ADD886 /* AJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTextField.m; sourceTree = "<group>"; };
+		9D3581C11F0A339600ADD886 /* AJTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTextView.h; sourceTree = "<group>"; };
+		9D3581C21F0A339600ADD886 /* AJTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		9D3581881F09F5B800ADD886 /* AJTextEditView */ = {
 			isa = PBXGroup;
 			children = (
+				9D3581BC1F09F5E300ADD886 /* Classes */,
 				9D35818C1F09F5B800ADD886 /* AppDelegate.h */,
 				9D35818D1F09F5B800ADD886 /* AppDelegate.m */,
 				9D35818F1F09F5B900ADD886 /* ViewController.h */,
@@ -138,6 +145,25 @@
 				9D3581B01F09F5B900ADD886 /* Info.plist */,
 			);
 			path = AJTextEditViewUITests;
+			sourceTree = "<group>";
+		};
+		9D3581BC1F09F5E300ADD886 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D3581BD1F09F5E300ADD886 /* AJTextEditView */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9D3581BD1F09F5E300ADD886 /* AJTextEditView */ = {
+			isa = PBXGroup;
+			children = (
+				9D3581BE1F09F61200ADD886 /* AJTextField.h */,
+				9D3581BF1F09F61200ADD886 /* AJTextField.m */,
+				9D3581C11F0A339600ADD886 /* AJTextView.h */,
+				9D3581C21F0A339600ADD886 /* AJTextView.m */,
+			);
+			path = AJTextEditView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +228,7 @@
 		9D35817E1F09F5B800ADD886 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AJ;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = AJ;
 				TargetAttributes = {
@@ -276,9 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3581C01F09F61200ADD886 /* AJTextField.m in Sources */,
 				9D3581911F09F5B900ADD886 /* ViewController.m in Sources */,
 				9D35818E1F09F5B800ADD886 /* AppDelegate.m in Sources */,
 				9D35818B1F09F5B800ADD886 /* main.m in Sources */,
+				9D3581C31F0A339600ADD886 /* AJTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M953KLT6PD;
 				INFOPLIST_FILE = AJTextEditView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AJTextEditView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M953KLT6PD;
 				INFOPLIST_FILE = AJTextEditView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AJTextEditView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
