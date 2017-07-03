@@ -1,0 +1,2 @@
+# AJTextEditView
+包含AJTextField、AJTextView自定义文本编辑视图，实现最大字数限制、是否支持空格或换行、是否设置预备文字等常用文本编辑功能。
